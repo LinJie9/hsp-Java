@@ -1,6 +1,6 @@
 package com.hspedu.extend_;
 
-public class Sub extends Base{
+public class Sub extends Base{ //子类
     public Sub(){
         System.out.println("sub()...");
     }
