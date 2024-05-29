@@ -8,8 +8,14 @@ public class Base { //父类
     int n3 = 300;
     private int n4 = 400;
 
+    //如果父类的默认构造器被覆盖了，那么需要在子类的每个构造器中去指明要哪个父类构造器
     public Base(){
         System.out.println("Base()....");
+    }
+
+    //这里是我定义的有参构造器，如果我把上面的无参构造器给注释掉，那么我这个有参构造就会覆盖掉上面的无参构造
+    public Base(String name,int age){
+        System.out.println("父类Base(String name,int age)构造器被调用...");
     }
 
     //父类提供了一个public方法，返回了n4
