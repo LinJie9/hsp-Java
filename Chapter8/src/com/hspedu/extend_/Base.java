@@ -13,6 +13,10 @@ public class Base { //父类
         System.out.println("Base()....");
     }
 
+    public Base(String name){
+        System.out.println("父类Base(String name)构造器被调用...");
+    }
+
     //这里是我定义的有参构造器，如果我把上面的无参构造器给注释掉，那么我这个有参构造就会覆盖掉上面的无参构造
     public Base(String name,int age){
         System.out.println("父类Base(String name,int age)构造器被调用...");

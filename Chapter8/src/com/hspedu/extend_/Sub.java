@@ -13,6 +13,20 @@ public class Sub extends Base{ //子类
         super("mark",11);
         System.out.println("子类的String name被调用");
     }
+
+    public Sub(String name, int age){
+        //细节
+        //一个构造器里面只能有一个super（）
+        // 并且如果使用了super就不能再使用this了，super和this都属于方法
+        // super在使用时，必须樊在构造器的第一行
+
+//        super();
+//        super("hsp");
+        super("tom",20);
+        System.out.println("子类的(String name, int age)被调用");
+    }
+
+
     public void sayOk(){
         //非私有的属性和方法可以在子类直接访问（n1、n2、n3）
         //但是私有属性和方法不能在子类直接访问（n4）
