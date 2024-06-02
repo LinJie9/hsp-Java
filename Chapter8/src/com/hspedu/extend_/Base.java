@@ -2,7 +2,9 @@ package com.hspedu.extend_;
 
 //子类继承了所有的属性和方法，但是私有属性和方法不能在子类直接访问，要通过公共的方法去访问
 
-public class Base { //父类
+import com.hspedu.extend_.improve_.TopBase;
+
+public class Base extends TopBase { //父类
     public int n1 = 100;
     protected int n2 = 200;
     int n3 = 300;
